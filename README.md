@@ -1,4 +1,4 @@
-# Hand-Motion
+# Volume-Control
 
 Use your hands to control the master volume.
 
