@@ -1,5 +1,5 @@
 # Volume-Control
 
-Use your hands to control the master volume.
+The power to control master volume, quite literally at your fingertips
 
 *Note: Currently works for Linux only*
