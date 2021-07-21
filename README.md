@@ -5,6 +5,11 @@ The power to control master volume, quite literally at your fingertips
 *Note: Currently works for Linux only*
 
 ## Before you begin:
+- Clone this repository
+```
+  $ git clone https://github.com/7wikd/Volume-Control.git
+  $ cd Volume-Control
+```
 - Install dependencies:
 ```python
 $ pip install -r requirements.txt
