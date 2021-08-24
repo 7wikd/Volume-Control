@@ -5,11 +5,6 @@ import handtracker_module as htm
 import math
 import alsaaudio as aud
 
-############# Pycaw #####################
-#from ctypes import cast, POINTER
-#from comtypes import CLSCTX_ALL
-#from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-
 #########
 wCam ,hCam = 640, 480
 #########
@@ -89,4 +84,5 @@ while True:
     cv2.putText(img,f'FPS:{int(fps)}',(10,30),cv2.FONT_HERSHEY_PLAIN,2,(255,255,0),1)
     cv2.imshow("Image",img)
 
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+        break
