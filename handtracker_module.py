@@ -28,14 +28,15 @@ Hand Landmarks:
 '''
 
 class handDetector():
-    def __init__(self,mode=False,maxHands=2,detectionConf=0.5,trackConf=0.5):
+    def __init__(self,mode=False,maxHands=2,model_complexity=1, detectionConf=0.5,trackConf=0.5):
         self.mode = mode
         self.maxHands = maxHands
         self.detectionConf = detectionConf
         self.trackConf = trackConf
+        self.model_complexity = model_complexity
 
         self.mpHands = mp.solutions.hands
-        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.detectionConf, self.trackConf)
+        self.hands = self.mpHands.Hands(self.mode, self.maxHands, self.model_complexity, self.detectionConf, self.trackConf)
         self.mpDraw = mp.solutions.drawing_utils
 
     def find_hands(self,img,draw = True):
